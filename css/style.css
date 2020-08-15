@@ -1189,7 +1189,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider {
   position: relative;
-  max-width: 1412px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -1217,11 +1217,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0;
     background: url("../icons/arrow_right.png") 0 0/100% no-repeat; }
   .slider__item {
+    padding: 10px;
+    max-width: 601px;
     display: flex;
     flex-direction: column;
     opacity: 0.2;
-    overflow: hidden;
-    max-width: 601px; }
+    overflow: hidden; }
+    @media (max-width: 767.98px) {
+      .slider__item {
+        width: 100vw; } }
   .slider__img {
     display: flex;
     margin: 0 auto;
@@ -1516,9 +1520,12 @@ h1, h2, h3, h4, h5, h6 {
 .popup-form {
   display: flex;
   background: #5e6a94;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, 0); }
+  @media (max-width: 767.98px) {
+    .popup-form {
+      top: 10%; } }
 
 .form-feed_popup {
   flex: 0 1 auto;

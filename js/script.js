@@ -132,10 +132,15 @@ window.addEventListener('DOMContentLoaded', () => {
 				settings: {
 					arrows: false,
 					dots: true,
-					slidesToShow: 3,
+					slidesToShow: 1,
 				}
 			},{
-				
+				breakpoint: 600,
+				settings: {
+					arrows: false,
+					dots: true,
+					slidesToShow: 1,
+				}
 			}
 		]
 	});  
