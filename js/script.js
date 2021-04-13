@@ -139,7 +139,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				settings: {
 					arrows: false,
 					dots: true,
-					slidesToShow: 1,
+					slidesToShow: 1
 				}
 			}
 		]
@@ -162,7 +162,7 @@ window.addEventListener('DOMContentLoaded', () => {
 					let target = e.target;
 					priceMain[i].classList.remove('price-body_main_active');
 					priceMore[i].classList.add('price-body_more_active');
-					moreContent[i].style.display = 'block';
+					moreContent[i].style.display = 'flex';
 	
 				});
 
